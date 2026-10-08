@@ -1,0 +1,25 @@
+# Local configuration may contain database or Kafka credentials.
+config.json
+config.*.json
+!config.example.json
+.env
+.env.*
+!.env.example
+
+# Runtime state, logs, and local builds.
+.state/
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.log
+bin/
+
+# Private key and client certificate bundles.
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+
+.DS_Store

@@ -1,0 +1,18 @@
+{
+  "mysql": {
+    "host": "mysql.example.com",
+    "port": 3306,
+    "user": "cdc_user",
+    "password": "replace-me",
+    "database": "db2",
+    "server_id": 240911
+  },
+  "kafka": {
+    "brokers": ["127.0.0.1:9092"],
+    "topic": "qq.supplier.events"
+  },
+  "state_file": ".state/checkpoint.db",
+  "group_name_filter": ["供应商", "供货商"],
+  "publish_tables": ["qq_messages"],
+  "max_transaction_rows": 100000
+}
